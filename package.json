@@ -1,0 +1,31 @@
+{
+  "name": "@josephmark/eslint-config-react",
+  "version": "1.0.0",
+  "description": "The Josephmark team's React/Typescript linter config",
+  "main": ".eslintrc.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisjosephmark/eslint-config-react.git"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "react"
+  ],
+  "author": "@floatingdino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whoisjosephmark/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/whoisjosephmark/eslint-config-react#readme",
+  "dependencies": {
+    "@josephmark/eslint-config": "^1.0.1",
+    "eslint": "^8.20.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}
