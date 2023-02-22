@@ -1,6 +1,7 @@
 {
   "extends": [
     "@josephmark",
+    "airbnb",
     "airbnb/hooks"
   ],
   "rules": {
