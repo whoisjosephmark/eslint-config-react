@@ -2,7 +2,8 @@
   "extends": [
     "@josephmark",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "react/jsx-filename-extension": [
