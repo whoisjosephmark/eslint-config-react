@@ -6,6 +6,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "import/extensions": ["warn", "never"],
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".jsx", ".tsx"] }
