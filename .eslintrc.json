@@ -22,7 +22,20 @@
     "react/react-in-jsx-scope": "off", // https://github.com/vercel/next.js/blob/canary/docs/upgrading.md#react-16-to-17
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": "off",
-    "react/display-name": ["off"]
+    "react/display-name": ["off"],
+    "import/no-named-as-default": "off",
+    "curly": ["error", "all"],
+    "no-unused-vars": "off", // Prefer TS version
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+    // https://github.com/typescript-eslint/typescript-eslint/issues/2483
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "camelcase": "off",
+    "no-console": "off"
   },
   "globals": {
     "JSX": true
