@@ -21,7 +21,8 @@
     "react/react-in-jsx-scope": "off", // https://github.com/vercel/next.js/blob/canary/docs/upgrading.md#react-16-to-17
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": "off",
-    "react/display-name": ["off"]
+    "react/display-name": ["off"],
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }]
   },
   "globals": {
     "JSX": true
