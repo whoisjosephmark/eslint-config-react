@@ -1,6 +1,6 @@
 {
   "name": "@josephmark/eslint-config-react",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "The Josephmark team's React/Typescript linter config",
   "main": ".eslintrc.json",
   "scripts": {
