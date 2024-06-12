@@ -4,7 +4,7 @@ import path from "node:path"
 import { fileURLToPath } from "node:url"
 
 import eslintConfigPrettier from "eslint-config-prettier"
-import josephmarkEslintConfig from "@josephmark/eslint-config"
+import jm from "@josephmark/eslint-config"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -22,8 +22,7 @@ export default [
   ...noImportConfig,
   ...compat.extends("airbnb/hooks"),
   eslintConfigPrettier,
-  ...josephmarkEslintConfig,
-
+  ...jm,
   {
     name: "@josephmark/eslint-config-react:rules",
     rules: {
