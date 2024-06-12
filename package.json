@@ -1,8 +1,8 @@
 {
   "name": "@josephmark/eslint-config-react",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "The Josephmark team's React/Typescript linter config",
-  "main": ".eslintrc.json",
+  "main": "eslint.config.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,14 +22,17 @@
   },
   "homepage": "https://github.com/whoisjosephmark/eslint-config-react#readme",
   "dependencies": {
-    "@josephmark/eslint-config": "^1.0.6",
-    "eslint": "^8.51.0",
+    "@josephmark/eslint-config": "^1.1.2",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
-  }
+    "eslint-plugin-prettier": "^5.1.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8 || ^9"
+  },
+  "type": "module"
 }
