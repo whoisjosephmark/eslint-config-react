@@ -18,6 +18,7 @@ const compat = new FlatCompat({
 const airbnbConfig = compat.extends("airbnb")
 const noImportConfig = airbnbConfig.filter(({ plugins }) => !plugins?.import)
 
+/** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   ...noImportConfig,
   ...compat.extends("airbnb/hooks"),
