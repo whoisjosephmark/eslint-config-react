@@ -1,9 +1,11 @@
 import { FlatCompat } from "@eslint/eslintrc"
+import { fixupPluginRules } from "@eslint/compat"
 import js from "@eslint/js"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
 import eslintConfigPrettier from "eslint-config-prettier"
+import eslintPluginReactHooks from "eslint-plugin-react-hooks"
 import jm from "@josephmark/eslint-config"
 
 const __filename = fileURLToPath(import.meta.url)
@@ -21,9 +23,18 @@ const noImportConfig = airbnbConfig.filter(({ plugins }) => !plugins?.import)
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   ...noImportConfig,
-  ...compat.extends("airbnb/hooks"),
   eslintConfigPrettier,
   ...jm,
+  {
+    name: "@josephmark/eslint-config-react:hooks",
+    plugins: {
+      "react-hooks": fixupPluginRules(eslintPluginReactHooks),
+    },
+    rules: {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error",
+    },
+  },
   {
     name: "@josephmark/eslint-config-react:rules",
     rules: {
