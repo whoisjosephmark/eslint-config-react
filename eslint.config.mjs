@@ -40,12 +40,7 @@ export default [
     rules: {
       "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
       // https://github.com/yannickcr/eslint-plugin-react/issues/1009
-      "react/require-default-props": [
-        "error",
-        {
-          ignoreFunctionalComponents: true,
-        },
-      ],
+      "react/require-default-props": "off",
       "react/prop-types": "off", // Since we're using Typescript
       "react/react-in-jsx-scope": "off", // https://github.com/vercel/next.js/blob/canary/docs/upgrading.md#react-16-to-17
       "react/jsx-props-no-spreading": "off",
