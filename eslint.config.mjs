@@ -1,5 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc"
-import { fixupPluginRules } from "@eslint/compat"
+import { fixupConfigRules, fixupPluginRules } from "@eslint/compat"
 import js from "@eslint/js"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
@@ -17,7 +17,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 })
 
-const airbnbConfig = compat.extends("airbnb")
+const airbnbConfig = fixupConfigRules(compat.extends("airbnb"))
 const noImportConfig = airbnbConfig.filter(({ plugins }) => !plugins?.import)
 
 /** @type {import("eslint").Linter.FlatConfig[]} */

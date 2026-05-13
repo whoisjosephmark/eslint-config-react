@@ -36,7 +36,8 @@
   },
   "devDependencies": {
     "eslint": "^10.3.0",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "eslint": "^8 || ^9"
